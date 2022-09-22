@@ -6,8 +6,14 @@
     justify-content: center;
 }
 
-@mixin font-style($weight, $size, $line-height) {
+@mixin font-style($weight, $size, $line-height, $space: 0.03em) {
     font-weight: $weight;
     font-size: $size;
     line-height: $line-height;
+    letter-spacing: $space;
+}
+
+@mixin section-paddings($top: 94px, $bottom: 94px) {
+    padding-top: $top;
+    padding-bottom: $bottom;
 }
