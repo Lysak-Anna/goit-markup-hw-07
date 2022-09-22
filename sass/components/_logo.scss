@@ -1,0 +1,22 @@
+
+.logo {
+    @extend %link;
+    @include font-style(700, 26px, 1.2);
+    font-family: Raleway, sans-serif;
+    margin-right: 93px;     /*for header*/
+  
+
+}
+.logo__name-start {
+    color: $accent-color;
+
+}
+.logo__name-end {
+    &--black {
+        color: $black-color;
+    }
+    &--white {
+        color: $white-color;
+    }
+}
+
