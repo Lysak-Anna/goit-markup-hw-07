@@ -33,16 +33,28 @@
 
     color: $main-text-color;
 
-    &--current {
+    &--studio-current,
+    &--portfolio-current {
         position: relative;
         color: $accent-color;
     }
 
-    &--current::after {
+    &--studio-current::after {
         position: absolute;
         bottom: 0;
         content: "";
         width: 48px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $accent-color;
+
+    }
+
+    &--portfolio-current::after {
+        position: absolute;
+        bottom: 0;
+        content: "";
+        width: 78px;
         height: 4px;
         border-radius: 2px;
         background-color: $accent-color;

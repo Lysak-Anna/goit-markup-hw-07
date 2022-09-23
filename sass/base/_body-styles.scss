@@ -1,6 +1,6 @@
 .main-page {
-    color: var(--primary-text-color);
-    background-color: var(--primary-white-color);
+    color: $main-text-color;
+    background-color: $white-color;
 
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
@@ -13,4 +13,19 @@
     padding-left: 15px;
     padding-right: 15px;
 
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.titles {
+    @include font-style(700, 36px, 1.2);
+    margin-bottom: 50px;
+    text-align: center;
+       
 }

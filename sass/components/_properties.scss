@@ -1,0 +1,36 @@
+.properties {
+    @include section-paddings($bottom: 0);
+}
+
+.peculiarities {
+    @extend %list;
+    display: flex;
+}
+.peculiarities__item {
+    width: 270px;
+    &+& {
+        margin-left: 30px;
+    }
+}
+.peculiarities__image {
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    height: 120px;
+    background-color: $light-background-color;
+    
+}
+.peculiarities__title {
+    @include font-style(700, 14px, 1.14);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.peculiarities__text {
+    @include font-style(400, 14px, 1.7);
+    color: $additional-text-color;
+}
+
+
+
+
+
