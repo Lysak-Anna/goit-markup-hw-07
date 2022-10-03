@@ -9,25 +9,37 @@
                 rgba(47, 48, 58, 0.4)),
             url('../images/header-img.jpg');
     border: 1px solid $black-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: $hero-background-color;
-    text-align: center;
     
+    
+}
+.hero-content {
+    width: 696px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero__title {
     @include font-style(900, 44px, 1.36, 0.06em);
     text-transform: uppercase;
-    max-width: 700px;
-    margin: 0 auto 30px;
+    margin-bottom: 30px;
     
     color: $white-color;     
 }
 .hero__button {
     @extend %button;
-    display: inline-block;
-    padding: 10px 32px;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $active-button-bg-color;
+    }
+
 }
