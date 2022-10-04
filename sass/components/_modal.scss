@@ -53,14 +53,13 @@
 }
 
 .form {
-    padding: 40px 40px;
+    padding: 40px;
 }
 
 .form__title {
     @include font-style(700, 20px, 1.15);
     margin-top: 2px;
     margin-bottom: 12px;
-
     text-align: center;
 }
 

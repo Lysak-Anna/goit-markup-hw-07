@@ -45,21 +45,20 @@
 }
 .soc-med__link {
     @extend %link;
+    padding: 12px;
     display: block;
     width: 44px;
     height: 44px;
-    padding: 12px 12px;
     border-radius: 50%;
     fill: $icon-color;
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
     fill: $white-color;
     background-color: $accent-color;
-    transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 }

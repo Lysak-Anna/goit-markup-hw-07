@@ -13,7 +13,7 @@
     }
 }
 .peculiarities__image {
-    padding: 25px 100px;
+    @include centered-flex;
     margin-bottom: 30px;
     border-radius: 4px;
     height: 120px;

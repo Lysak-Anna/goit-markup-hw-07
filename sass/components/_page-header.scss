@@ -1,5 +1,4 @@
 .page-header {
-
     border-bottom: 1px solid $header-border-color;
 }
 
@@ -65,8 +64,10 @@
 
 }
 
-.header-contacts__item+.header-contacts__item {
+.header-contacts__item {
+    &+& {
     margin-left: 30px;
+    }
 
 }
 

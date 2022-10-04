@@ -65,9 +65,7 @@
     position: relative;
     overflow: hidden;
 }
-.portfolio-card__image {
-    display: block;
-}
+
 .portfolio-card__content {
     @include font-style(400, 18px, 1.55);
     position: absolute;
@@ -88,9 +86,8 @@
    
 }
 .border {
-    border-left: 1px solid $portfolio-border-color;
-    border-right: 1px solid $portfolio-border-color;
-    border-bottom: 1px solid $portfolio-border-color;
+    border: 1px solid $portfolio-border-color;
+    border-top: none;
     padding: 20px 24px;
 }
 
