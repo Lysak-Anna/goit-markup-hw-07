@@ -1,21 +1,10 @@
-@import "./utils/variables";
-@import "./utils/mixins";
-@import "./base/body-styles";
-@import "./base/modern-normalize";
+@import './utils/module';
+@import './base/module';
+@import './components/logo';
+@import './layout/module';
 
 
-@import "./utils/placeholders";
-@import "./utils/visually-hidden";
-@import "./components/page-header";
-@import "./components/logo";
-@import "./components/hero";
-@import "./components/modal";
-@import "./components/properties";
-@import "./components/description";
-@import "./components/team-section";
-@import "./components/clients";
-@import "./components/footer";
-@import "./components/portfolio";
+
 
 
 
